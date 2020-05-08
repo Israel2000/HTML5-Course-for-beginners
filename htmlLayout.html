@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html layout</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    /* navagtion */
+    nav {
+        background-color: black;
+        width: 100%;
+        height: 100px;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding-top: 40px;
+        text-align: center;
+    }
+
+    li {
+        display: inline;
+        padding: 10px;
+    }
+
+    li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: rgb(117, 117, 117);
+        text-decoration: underline;
+    }
+
+    /* article */
+    article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #f1f1f1;
+        height: 300px;
+    }
+
+    /* button */
+    button {
+        height: 50px;
+        width: 200px;
+        border-radius: 5px;
+        font-size: 20px;
+        border: 2px solid black;
+    }
+
+    button:hover {
+        color: white;
+        background-color: black;
+    }
+
+    /* aside */
+    aside {
+        float: right;
+        width: 30%;
+        padding: 40px;
+        height: 300px;
+        background-color: rgb(214, 214, 214);
+    }
+
+    footer {
+        background-color: silver;
+        color: white;
+        text-align: center;
+        padding: 40px;
+    }
+
+    @media (max-width: 600px) {
+
+        nav,
+        article,
+        aside {
+            width: 100%;
+            height: auto;
+        }
+    }
+</style>
+
+<body>
+    <h1>HTML5 Layout</h1>
+    <nav>
+        <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div>
+
+        <article>
+            <h2>Title</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum veniam deserunt similique, facilis
+                consectetur, aperiam non quisquam quas sapiente accusantium ea, neque debitis. Fuga id ipsam
+                asperiores,
+                perferendis quos excepturi!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, facere praesentium accusamus
+                exercitationem nam quibusdam placeat tempore! Numquam amet ab harum beatae, consectetur nihil culpa
+                cupiditate! Natus reiciendis libero non.</p>
+            <button>More News</button>
+        </article>
+
+
+        <aside>
+            <h3>Catagories</h3>
+            <ol>
+                <span>Latest News 05/19/20</span><br />
+                <span>Latest News 05/20/20</span>
+
+            </ol>
+        </aside>
+
+    </div>
+
+    <footer>&copy 2020 Promising Journey.</footer>
+</body>
+
+</html>
