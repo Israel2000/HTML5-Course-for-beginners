@@ -4,38 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML5 lesson-1</title>
+    <title>HTML5 lesson</title>
 </head>
+<style>
+    /* class */
+    .text-1 {
+        color: blue;
+    }
+
+    /* id */
+    #text-2 {
+        border: 2px solid red;
+    }
+</style>
 
 <body>
+    <!-- lesson 1 -->
     <h1>HTML5 Lesson!</h1>
-    <h2><u>Headers</u></h2>
-    <h1>Hello World!</h1>
-    <h2>Hello World!</h2>
-    <h3>Hello World!</h3>
-    <h4>Hello World!</h4>
-    <h5>Hello World!</h5>
-    <h6>Hello World!</h6>
-    <!--  -->
-    <h2><u>Paragraph, blockquote</u></h2>
 
+    <!-- headers -->
+    <h1>Headers</h1>
+    <h1>Header 1</h1>
+    <h2>Header 2</h2>
+    <h3>Header 3</h3>
+    <h4>Header 4</h4>
+    <h5>Header 5</h5>
+    <h6>Header 6</h6>
+
+    <!-- paragraph  -->
+    <h1>paragraph</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus tempora quis eius dicta fugiat aspernatur at
+        dolorum expedita est voluptates in, officiis tempore non deserunt, id hic culpa? Reiciendis, dolores.</p>
+
+    <!--blockquote-->
     <blockquote>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla <i>reprehenderit</i> provident esse
-            voluptates, ab
-            labore <br />
-            iste eaque ut culpa <b>ratione, </b>iure iusto facilis? Illum amet
-            <hr />doloribus numquam. Totam, similique maiores?
-            <!--  -->
-            <h2>Superscript text</h2>
-            <p>2<sup>2</sup></p>
-            <h2>Small text</h2>
-            <small>this is small text</small>
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla <i>reprehenderit</i> provident esse
+        voluptates, ab
+        labore <br />
+        iste eaque ut culpa <b>ratione, </b>iure iusto facilis? Illum amet
+        <hr />doloribus numquam. Totam, similique maiores?"
+
+        <!-- Misc. -->
+        <h2>Superscript text</h2>
+        <p>2<sup>2</sup></p>
+        <h2>Small text</h2>
+        <small>this is small text</small>
         </p>
     </blockquote>
-    <!--  -->
 
-    <h2><u>Headers</u></h2>
-
+    <!-- lists -->
+    <h1>Lists:</h1>
     <h1>Shopping List:</h1>
     <ul>
         <li>coffee</li>
@@ -48,8 +66,10 @@
         <li>milk</li>
     </ol>
 
-    <!--  -->
-    <h2><u>Table</u></h2>
+
+
+    <!-- table -->
+    <h1>Table</h1>
     <table style="width:300px">
         <tr>
             <th>Firstname</th>
@@ -73,6 +93,51 @@
         </tr>
     </table>
 
+    <!-- lesson 2  -->
+    <!--  hyperlinks -->
+    <h1>Link</h1>
+    <a href="about.html">about html</a>
+    <br />
+
+    <!-- form -->
+    <h1>Forms</h1>
+    <form>
+        <div>
+            <label>First Name:</label>
+            <input type="text" placeholder="first name" />
+        </div>
+        <div>
+            <label>Last Name:</label>
+            <input type="text" placeholder="last name" />
+        </div>
+        <div>
+            <label>Email:</label>
+            <input type="email" name="email" />
+        </div>
+        <div>
+            <label>Message:</label>
+            <textarea name="message"></textarea>
+        </div>
+        <div>
+            <label>Gender:</label>
+            <select name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+        <div>
+            <lable>Birth:</lable>
+            <input type="date" name="birthday">
+        </div>
+        <input type="submit" name="submit" value="Submit">
+        <button>Click Button</button>
+    </form>
+    <!-- class and id -->
+    <h1 class="text-1">I am learning about HTML5!</h1>
+    <h1 id="text-2">I am learning about HTML5!</h1>
+    <a href="assets/mycity.jpg">
+        <img src="./assets//mycity.jpg" alt="first-image" width="500">
+    </a>
 </body>
 
 </html>
