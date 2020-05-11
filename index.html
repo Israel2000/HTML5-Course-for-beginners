@@ -7,6 +7,8 @@
     <title>HTML5 lesson</title>
 </head>
 <style>
+    /*  */
+    /* lesson 2 */
     /* class */
     .text-1 {
         color: blue;
@@ -15,6 +17,26 @@
     /* id */
     #text-2 {
         border: 2px solid red;
+    }
+
+    /* lesson 3 */
+    .places {
+        border: 2px solid silver;
+        color: rgb(84, 84, 84);
+        text-align: center;
+        width: 500px;
+        margin: 5px;
+        padding: 0px;
+        border-radius: 5px;
+        height: 440px;
+    }
+
+    /* id: */
+    #myheader {
+        background-color: rgb(113, 177, 215);
+        text-align: center;
+        color: black;
+        padding: 40px;
     }
 </style>
 
@@ -138,6 +160,59 @@
     <p style="text-align: center;">this paragraph is text-aligned.</p>
     <!-- image -->
     <img src="./assets//mycity.jpg" alt="first-image" width="500">
+
+    <!-- lesson 3 -->
+
+    <!-- css: 3 ways creating  =>
+        1. inline: <h1 style="color:re">example</h1>
+        2. <style></style>
+        3. External: <link rel="stylesheet" href="styles.css">
+    -->
+
+    <!-- block-level elements -->
+    <div>
+        <!-- start new line -->
+    </div>
+    <footer></footer>
+    <article></article>
+    <header></header>
+
+
+    <!-- inline elements - dont start new line, take up space-->
+    <span> </span>
+    <a></a>
+    <label></label>
+
+    <!-- classes -->
+    <h1>My Faviorite Cities in the World!</h1>
+    <div class="places">
+        <h2>City: New York, New York</h2>
+        <h4>Nickname: The Empire State</h4>
+        <img src="assets/newyork.jpg" alt="ny" width="500" style="border-radius: 5px;" />
+    </div>
+    <div class="places">
+        <h2>City: Los Angeles</h2>
+        <h4>Nickname: City of Angeles</h4>
+        <img src="assets/losangeles.jpg" alt="losangeles" width="500" style="border-radius: 5px;" />
+    </div>
+    <div class="places">
+        <h2>City: London, England</h2>
+        <h4>Nickname: The Old Smoke</h4>
+        <img src="assets/london.jpg" alt="london" width="500" style="border-radius: 5px;" />
+    </div>
+
+    <!-- id: used for html elem and unique purpose -->
+    <header id="myheader">
+        <h1></h1>Header title</h1>
+    </header>
+    <h1 id="myHeader">first header</h1>
+    <button onclick="displayResult()">Change text</button>
+
+    <script>
+        function displayResult() {
+            document.getElementById("myHeader").innerHTML = "Change the header";
+        }
+    </script>
 </body>
 
 </html>
