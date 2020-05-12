@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive HTML5</title>
+
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Abel', sans-serif;
+        font-weight: bold;
+    }
+
+    h1 {
+        color: yellowgreen;
+        border: 2px solid yellowgreen;
+        width: 300px;
+    }
+
+    .header-1 {
+        text-align: center;
+        width: 100%;
+    }
+
+    div {
+        text-align: center;
+    }
+
+    input {
+        width: 220px;
+        height: 30px;
+    }
+
+    button {
+        width: 160px;
+        height: 35px;
+        background-color: #5b7033;
+        color: white;
+        font-size: 19px;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+
+    input[type="text"] {
+        font-size: 20px;
+        color: yellowgreen;
+    }
+
+    ::placeholder {
+        font-size: 19px;
+        color: yellowgreen;
+        font-style: italic;
+    }
+
+    button:hover {
+        background-color: yellowgreen;
+        color: yellow;
+    }
+
+
+
+    label {
+        color: #5b7033;
+    }
+
+    .left {
+        float: left;
+        width: 20%;
+        padding: 20px;
+
+    }
+
+    .middle {
+        float: left;
+        width: 20%;
+        padding: 20px;
+    }
+
+    .right {
+        float: right;
+        width: 60%;
+        padding: 20px;
+
+    }
+
+    small {
+        color: #5b7033;
+    }
+
+    /* Use a media query to add a break point at 800px: */
+    @media screen and (max-width:800px) {
+
+        .left,
+        .middle,
+        .right {
+            width: 100%;
+            /* The width is 100%, when the viewport is 800px or smaller */
+        }
+    }
+</style>
+
+<body>
+    <h1 style="font-size: 7vw; text-align: center;">Responsive HTML5</h1>
+    <div>
+        <img src="assets/myroom.jpg" style="width: 100%;">
+        <h1 class="header-1">Leave Info for Rent</h1>
+
+        <form>
+            <div class="left">
+                <label>Name: </label>
+                <input placeholder="enter name" type="text">
+            </div>
+            <div class="middle">
+                <label>Email: </label>
+                <input placeholder="enter email" type="text">
+            </div>
+
+            <div class="right">
+
+                <button>Submit</button>
+            </div>
+        </form>
+    </div>
+    <div>
+        <small><sup>+</sup> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita voluptatum maxime
+            asperiores,
+            omnis aliquid
+            deserunt rerum, quibusdam ducimus velit explicabo doloribus magni, architecto dolores dicta praesentium?
+            Quasi
+            nemo odio magnam.</small>
+    </div>
+</body>
+
+</html>
